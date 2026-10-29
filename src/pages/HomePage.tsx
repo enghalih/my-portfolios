@@ -27,7 +27,6 @@ export default function HomePage() {
         </div>
       </div>
       <div className="w-full h-[calc(100vh-124px)] bg-pink-400 border-custom rounded-2xl overflow-hidden items-center justify-center hidden md:flex md:col-span-1">
-        {/* Ganti src dengan path foto atau import gambar aslimu */}
         <img
           src={ProfilePicture}
           alt="Wenning Ghalih"

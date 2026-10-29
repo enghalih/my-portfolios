@@ -53,14 +53,14 @@ export default function ContactPage() {
           {result}
         </div>
       )}
-      {/* 1. Bagian Info Kontak Cepat (GitHub, Email, WhatsApp) */}
+      {/* social media link */}
       <div className="flex flex-col gap-4 md:row-span-2">
         {/* GitHub */}
         <a
           href="https://github.com/enghalih"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-neutral-0 border-custom rounded-2xl p-4 flex items-center gap-3 hover:bg-neutral-50 transition-colors"
+          className="bg-neutral-0 border-button rounded-2xl p-4 flex items-center gap-3 hover:bg-neutral-50 transition-colors"
         >
           <Github size={20} className="text-neutral-900" />
           <span className="text-preset-4-medium font-semibold">@enghalih</span>
@@ -69,7 +69,7 @@ export default function ContactPage() {
         {/* Email */}
         <a
           href="mailto:enghalih685@gmail.com"
-          className="bg-neutral-0 border-custom rounded-2xl p-4 flex items-center gap-3 hover:bg-neutral-50 transition-colors"
+          className="bg-neutral-0 border-button rounded-2xl p-4 flex items-center gap-3 hover:bg-neutral-50 transition-colors"
         >
           <Mail size={20} className="text-neutral-900" />
           <span className="text-preset-4-medium font-semibold">
@@ -82,7 +82,7 @@ export default function ContactPage() {
           href="https://wa.me/6282295051851"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-neutral-0 border-custom rounded-2xl p-4 flex items-center gap-3 hover:bg-neutral-50 transition-colors"
+          className="bg-neutral-0 border-button rounded-2xl p-4 flex items-center gap-3 hover:bg-neutral-50 transition-colors"
         >
           <Phone size={20} className="text-neutral-900" />
           <span className="text-preset-4-medium font-semibold">
@@ -91,7 +91,7 @@ export default function ContactPage() {
         </a>
       </div>
 
-      {/* 2. Bagian Formulir Kontak */}
+      {/* 2. Contact form */}
       <div className="bg-neutral-0 border-custom rounded-2xl p-6 flex flex-col gap-6 md:col-span-2">
         <h2 className="text-preset-2 font-bold">Kontak</h2>
 
@@ -120,7 +120,7 @@ export default function ContactPage() {
             />
           </div>
 
-          {/* Input Content / Pesan */}
+          {/* Input Content */}
           <div className="flex flex-col gap-2">
             <label className="text-sm font-semibold text-neutral-900">
               Content
@@ -132,7 +132,7 @@ export default function ContactPage() {
             />
           </div>
 
-          {/* Tombol Kirim */}
+          {/* Semd Button */}
           <div className="flex justify-end mt-2">
             <Button type="submit" disabled={isLoading}>
               {isLoading ? "Mengirim..." : "Kirim"}
@@ -141,7 +141,7 @@ export default function ContactPage() {
         </form>
       </div>
 
-      {/* 3. Bagian Alamat */}
+      {/* Address */}
       <div className="bg-neutral-0 border-custom rounded-2xl p-6 flex flex-col gap-3 md:col-span-2">
         <div className="flex items-center gap-2">
           <MapPin size={20} className="text-pink-700" />

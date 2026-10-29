@@ -7,7 +7,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { cn } from "./lib/utils";
-import Logo from "@/assets/logo.webp";
+import Logo from "@/assets/favicon.svg";
 
 export type Page = "home" | "portofolios" | "about" | "contact";
 

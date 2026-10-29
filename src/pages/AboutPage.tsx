@@ -21,9 +21,8 @@ export default function AboutPage() {
 
   return (
     <div className="h-full grid grid-cols-1 md:grid-cols-3 gap-6">
-      {/* Bagian Foto Profil */}
+      {/* Picture */}
       <div className="w-full h-72 bg-pink-400 border-custom rounded-2xl overflow-hidden flex items-center justify-center md:row-span-2 md:h-full">
-        {/* Ganti src dengan path foto atau import gambar aslimu */}
         <img
           src={ProfilePicture}
           alt="Wenning Ghalih"
@@ -31,7 +30,7 @@ export default function AboutPage() {
         />
       </div>
 
-      {/* Bagian Bio / Deskripsi */}
+      {/* Bio */}
       <div className="bg-neutral-0 border-custom rounded-2xl p-6 flex flex-col gap-4 md:col-span-2">
         <h2 className="text-preset-2">Tentang Saya</h2>
         <p className="text-preset-4-regular">
@@ -51,13 +50,12 @@ export default function AboutPage() {
         </p>
       </div>
 
-      {/* Bagian Tech Stack & Tools */}
+      {/* Tech Stack & Tools */}
       <div className="bg-neutral-0 border-custom rounded-2xl flex flex-col md:col-span-2">
         {/* Frontend */}
         <div className="flex flex-col gap-3 p-6">
           <h3 className="text-preset-3 font-semibold">Frontend</h3>
           <div className="flex flex-wrap gap-3">
-            {/* Kamu bisa mengganti ikon teks ini dengan SVG atau icon dari lucide/react-icons */}
             {skills.frontend.map((skill) => (
               <span className="px-3 py-1.5 bg-neutral-100 border-custom rounded-lg text-sm font-medium">
                 {skill}

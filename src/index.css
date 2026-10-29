@@ -1,40 +1,9 @@
 @import "tailwindcss";
 
-/* @font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('./assets/fonts/poppins-v21-latin-regular.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('./assets/fonts/poppins-v21-latin-500.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url('./assets/fonts/poppins-v21-latin-600.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('./assets/fonts/poppins-v21-latin-700.woff2') format('woff2');
-} */
-
 @theme {
   --font-sans: 'Poppins', sans-serif;
-  /* --- Color Palette dari Style Guide --- */
+
+  /* Color Palette */
   --color-*: initial;
 
   --color-neutral-900: #2E1401;
@@ -106,7 +75,6 @@
   }
 }
 
-/* --- Typography Utility Presets (Sekali panggil langsung aktif semua) --- */
 @utility text-preset-1-mb {
   font-family: var(--font-sans);
   font-weight: 700; /* Bold */
