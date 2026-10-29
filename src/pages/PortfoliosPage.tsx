@@ -4,46 +4,42 @@ import { Github } from "@/components/Logos";
 
 // Data contoh daftar portofolio (bisa kamu sesuaikan dengan proyek aslimu nanti)
 const projects = [
-  {
-    id: 1,
-    title: "Lorem ipsum dolor sit amet consectetur.",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Sed morbi ac odio viverra dignissim auctor. Nibh sapien convallis amet malesuada enim faucibus nulla. Non odio te quis.",
-    image: "/placeholder-project-1.jpg", // Ganti dengan path gambar proyekmu
-    liveUrl: "https://enghalih.com",
-    githubUrl: "https://github.com/enghalih",
-    docsUrl: "#",
-  },
-  {
-    id: 2,
-    title: "Lorem ipsum dolor sit amet consectetur.",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Sed morbi ac odio viverra dignissim auctor. Nibh sapien convallis amet malesuada enim faucibus nulla. Non odio te quis.",
-    image: "/placeholder-project-2.jpg",
-    liveUrl: "https://enghalih.com",
-    githubUrl: "https://github.com/enghalih",
-    docsUrl: "#",
-  },
-  {
-    id: 3,
-    title: "Lorem ipsum dolor sit amet consectetur.",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Sed morbi ac odio viverra dignissim auctor. Nibh sapien convallis amet malesuada enim faucibus nulla. Non odio te quis.",
-    image: "/placeholder-project-3.jpg",
-    liveUrl: "https://enghalih.com",
-    githubUrl: "https://github.com/enghalih",
-    docsUrl: "#",
-  },
-  {
-    id: 4,
-    title: "Lorem ipsum dolor sit amet consectetur.",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Sed morbi ac odio viverra dignissim auctor. Nibh sapien convallis amet malesuada enim faucibus nulla. Non odio te quis.",
-    image: "/placeholder-project-4.jpg",
-    liveUrl: "https://enghalih.com",
-    githubUrl: "https://github.com/enghalih",
-    docsUrl: "#",
-  },
+  // {
+  //   id: 1,
+  //   title: "Lorem ipsum dolor sit amet consectetur.",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur. Sed morbi ac odio viverra dignissim auctor. Nibh sapien convallis amet malesuada enim faucibus nulla. Non odio te quis.",
+  //   image: "/placeholder-project-1.jpg", // Ganti dengan path gambar proyekmu
+  //   liveUrl: "https://enghalih.com",
+  //   githubUrl: "https://github.com/enghalih",
+  // },
+  // {
+  //   id: 2,
+  //   title: "Lorem ipsum dolor sit amet consectetur.",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur. Sed morbi ac odio viverra dignissim auctor. Nibh sapien convallis amet malesuada enim faucibus nulla. Non odio te quis.",
+  //   image: "/placeholder-project-2.jpg",
+  //   liveUrl: "https://enghalih.com",
+  //   githubUrl: "https://github.com/enghalih",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Lorem ipsum dolor sit amet consectetur.",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur. Sed morbi ac odio viverra dignissim auctor. Nibh sapien convallis amet malesuada enim faucibus nulla. Non odio te quis.",
+  //   image: "/placeholder-project-3.jpg",
+  //   liveUrl: "https://enghalih.com",
+  //   githubUrl: "https://github.com/enghalih",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Lorem ipsum dolor sit amet consectetur.",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur. Sed morbi ac odio viverra dignissim auctor. Nibh sapien convallis amet malesuada enim faucibus nulla. Non odio te quis.",
+  //   image: "/placeholder-project-4.jpg",
+  //   liveUrl: "https://enghalih.com",
+  //   githubUrl: "https://github.com/enghalih",
+  // },
 ];
 
 export default function PortofoliosPage() {
