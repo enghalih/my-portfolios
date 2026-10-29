@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { AnimatePresence, motion } from "motion/react";
 
 import Layout, { type Page } from "./Layout";
@@ -8,6 +8,13 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 
 const pageOrder: Page[] = ["home", "portofolios", "about", "contact"];
+
+const pageTitles: Record<Page, string> = {
+  home: "Beranda",
+  portofolios: "Portofolio",
+  about: "Tentang Saya",
+  contact: "Kontak",
+};
 
 const pageVariants = {
   enter: (direction: number) => ({
@@ -29,6 +36,7 @@ const pageVariants = {
 function App() {
   const [activePage, setActivePage] = useState<Page>("home");
   const [direction, setDirection] = useState(1);
+  const mainRef = useRef<HTMLElement>(null);
 
   function navigateToPage(nextPage: Page) {
     if (nextPage === activePage) return;
@@ -39,6 +47,10 @@ function App() {
     setDirection(nextIndex > currentIndex ? 1 : -1);
     setActivePage(nextPage);
   }
+
+  useEffect(() => {
+    mainRef.current?.focus();
+  }, [activePage]);
 
   function renderPage() {
     switch (activePage) {
@@ -58,7 +70,17 @@ function App() {
 
   return (
     <div className="min-h-screen p-6 flex flex-col gap-8 overflow-x-clip">
-      <main className="grid w-full max-w-7xl flex-1 my-auto mx-auto pb-19 md:pt-19 md:pb-0">
+      {/* Screen reader live region for page change announcement */}
+      <div className="sr-only" role="status" aria-live="polite" aria-atomic="true">
+        {`Halaman ${pageTitles[activePage]} ditampilkan`}
+      </div>
+
+      <main
+        ref={mainRef}
+        tabIndex={-1}
+        aria-label={pageTitles[activePage]}
+        className="grid w-full max-w-7xl flex-1 my-auto mx-auto pb-19 md:pt-19 md:pb-0 focus:outline-none"
+      >
         <AnimatePresence mode="sync" initial={false} custom={direction}>
           <motion.div
             key={activePage}
