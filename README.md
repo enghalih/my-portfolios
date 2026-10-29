@@ -122,3 +122,9 @@ Follow these instructions to run the project locally on your machine.
 ## 📄 License
 
 This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+## Acknowledgments
+- Visual design style and aesthetic inspired by [Frontend Mentor](https://www.frontendmentor.io) design systems.
+- Developed independently as a personal portfolio website.
