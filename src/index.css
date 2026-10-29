@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+/* @font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/poppins-v21-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./assets/fonts/poppins-v21-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./assets/fonts/poppins-v21-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./assets/fonts/poppins-v21-latin-700.woff2') format('woff2');
+} */
+
+@theme {
+  --font-sans: 'Poppins', sans-serif;
+  /* --- Color Palette dari Style Guide --- */
+  --color-*: initial;
+
+  --color-neutral-900: #2E1401;
+  --color-neutral-600: #6D5B4D;
+  --color-neutral-100: #F7F3F0;
+  --color-neutral-0:   #FFFFFF;
+
+  --color-yellow-500:  #F8CB46;
+  --color-blue-400:    #92ADEB;
+  --color-blue-600:    #5072C7;
+  --color-teal-400:    #47D9C9;
+  --color-pink-400:    #FC8AE5;
+  --color-pink-500:    #F073A3;
+  --color-pink-700:    #E11966;
+
+  /* --- Font Family --- */
+  --font-sans: 'Poppins', sans-serif;
+}
+
+@utility inner-border-custom {
+  box-shadow: 
+    inset 0 1px 0 0 var(--color-neutral-900),  /* Atas: 4px */
+    inset -2px 0 0 0 var(--color-neutral-900),   /* Kanan: 2px */
+    inset 0 -2px 0 0 var(--color-neutral-900),   /* Bawah: 4px */
+    inset 1px 0 0 0 var(--color-neutral-900);    /* Kiri: 2px */
+}
+
+@utility border-custom {
+  box-shadow: 1px 2px 0 0 var(--color-neutral-900);
+  border: 1px solid var(--color-neutral-900);
+}
+
+@utility border-button {
+  --shadow-color: var(--color-neutral-900);
+  box-shadow: 2px 2px 0 0 var(--shadow-color);
+  border: 1px solid var(--shadow-color);
+  transition: all 0.1s ease;
+  
+  &:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0 0 var(--shadow-color);
+  }
+
+  &:focus-visible, &:focus {
+    outline: none;
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0 0 var(--shadow-color);
+    --shadow-color: var(--color-blue-600);
+    border: 1px solid var(--shadow-color);
+  }
+}
+
+@utility border-input {
+  --shadow-color: var(--color-neutral-900);
+  border: 1px solid var(--shadow-color);
+  transition: all 0.1s ease;
+  
+  &:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0 0 var(--shadow-color);
+  }
+
+  &:focus-visible, &:focus {
+    outline: none;
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0 0 var(--shadow-color);
+    --shadow-color: var(--color-blue-600);
+    border: 1px solid var(--shadow-color);
+  }
+}
+
+/* --- Typography Utility Presets (Sekali panggil langsung aktif semua) --- */
+@utility text-preset-1-mb {
+  font-family: var(--font-sans);
+  font-weight: 700; /* Bold */
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+@utility text-preset-1-tb {
+  font-family: var(--font-sans);
+  font-weight: 700; /* Bold */
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+@utility text-preset-1 {
+  font-family: var(--font-sans);
+  font-weight: 700; /* Bold */
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+@utility text-preset-2 {
+  font-family: var(--font-sans);
+  font-weight: 600; /* SemiBold */
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+@utility text-preset-3 {
+  font-family: var(--font-sans);
+  font-weight: 600; /* SemiBold */
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+@utility text-preset-4-semibold {
+  font-family: var(--font-sans);
+  font-weight: 600; /* SemiBold */
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+@utility text-preset-4-medium {
+  font-family: var(--font-sans);
+  font-weight: 500; /* Medium */
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+@utility text-preset-4-regular {
+  font-family: var(--font-sans);
+  font-weight: 400; /* Regular */
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0px;
+}
+
+@utility text-preset-5-medium {
+  font-family: var(--font-sans);
+  font-weight: 500; /* Medium */
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0px;
+}
+
+@utility text-preset-5-regular {
+  font-family: var(--font-sans);
+  font-weight: 400; /* Regular */
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0px;
+}
+
+@utility text-preset-6 {
+  font-family: var(--font-sans);
+  font-weight: 500; /* Medium */
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: -0.03em; /* -3% */
+}
+
+body {
+  background-color: var(--color-neutral-100);
+  color: var(--color-neutral-900);
+  font-family: var(--font-sans);
+  font-weight: 400; /* Regular */
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0px;
+}
