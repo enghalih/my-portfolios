@@ -1,5 +1,5 @@
 import { buttonVariants } from "@/components/Button";
-import { Globe, FileText } from "lucide-react";
+import { Globe } from "lucide-react";
 import { Github } from "@/components/Logos";
 
 // Data contoh daftar portofolio (bisa kamu sesuaikan dengan proyek aslimu nanti)
