@@ -1,45 +1,19 @@
 import { buttonVariants } from "@/components/Button";
 import { Globe } from "lucide-react";
 import { Github } from "@/components/Logos";
+import Portfolio1 from "@/assets/portfolio-1.webp";
 
 // Data contoh daftar portofolio (bisa kamu sesuaikan dengan proyek aslimu nanti)
 const projects = [
-  // {
-  //   id: 1,
-  //   title: "Lorem ipsum dolor sit amet consectetur.",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur. Sed morbi ac odio viverra dignissim auctor. Nibh sapien convallis amet malesuada enim faucibus nulla. Non odio te quis.",
-  //   image: "/placeholder-project-1.jpg", // Ganti dengan path gambar proyekmu
-  //   liveUrl: "https://enghalih.com",
-  //   githubUrl: "https://github.com/enghalih",
-  // },
-  // {
-  //   id: 2,
-  //   title: "Lorem ipsum dolor sit amet consectetur.",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur. Sed morbi ac odio viverra dignissim auctor. Nibh sapien convallis amet malesuada enim faucibus nulla. Non odio te quis.",
-  //   image: "/placeholder-project-2.jpg",
-  //   liveUrl: "https://enghalih.com",
-  //   githubUrl: "https://github.com/enghalih",
-  // },
-  // {
-  //   id: 3,
-  //   title: "Lorem ipsum dolor sit amet consectetur.",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur. Sed morbi ac odio viverra dignissim auctor. Nibh sapien convallis amet malesuada enim faucibus nulla. Non odio te quis.",
-  //   image: "/placeholder-project-3.jpg",
-  //   liveUrl: "https://enghalih.com",
-  //   githubUrl: "https://github.com/enghalih",
-  // },
-  // {
-  //   id: 4,
-  //   title: "Lorem ipsum dolor sit amet consectetur.",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur. Sed morbi ac odio viverra dignissim auctor. Nibh sapien convallis amet malesuada enim faucibus nulla. Non odio te quis.",
-  //   image: "/placeholder-project-4.jpg",
-  //   liveUrl: "https://enghalih.com",
-  //   githubUrl: "https://github.com/enghalih",
-  // },
+  {
+    id: 1,
+    title: "Personal Portfolio Website – Modern Neo-Brutalist Web App",
+    description:
+      "Website portofolio pribadi yang dirancang dan dikembangkan dari nol dengan pendekatan desain Neo-brutalist yang bersih, interaktif, dan responsif. Dibangun untuk menampilkan profil profesional, daftar proyek, serta kemudahan akses kontak secara optimal di berbagai ukuran perangkat.",
+    image: Portfolio1, // Ganti dengan path gambar proyekmu
+    liveUrl: "https://enghalih.com",
+    githubUrl: "https://github.com/enghalih",
+  },
 ];
 
 export default function PortofoliosPage() {
@@ -63,7 +37,7 @@ export default function PortofoliosPage() {
           >
             {/* Gambar / Thumbnail Proyek */}
             <div className="flex flex-col gap-4">
-              <div className="w-full aspect-video bg-neutral-200 border border-neutral-900 rounded-xl overflow-hidden flex items-center justify-center md:justify-stretch">
+              <div className="w-full aspect-4/3 bg-neutral-200 border border-neutral-900 rounded-xl overflow-hidden flex items-center justify-center md:justify-stretch">
                 <img
                   src={project.image}
                   alt={project.title}
