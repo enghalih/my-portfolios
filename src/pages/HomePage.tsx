@@ -1,6 +1,7 @@
-import { Button } from "@/components/Button";
-import { Link, BriefcaseBusinessIcon } from "lucide-react";
+import { buttonVariants } from "@/components/Button";
+import { Link } from "lucide-react";
 import ProfilePicture from "@/assets/profile.webp"
+import { cn } from "@/lib/utils";
 
 export default function HomePage() {
   return (
@@ -17,13 +18,19 @@ export default function HomePage() {
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-4">
-          <Button variant="primary">
+          <a
+            className={cn(buttonVariants({ variant: "primary" }))}
+            href="/Mohammad Wenning Ghalih_CV.pdf"
+            download="CV_Mohammad Wenning Ghalih.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Link size={16} /> Unduh CV
-          </Button>
-          <Button variant="secondary">
+          </a>
+          {/* <Button variant="secondary">
             <BriefcaseBusinessIcon size={16} />
             <p className="hidden sm:block">Lihat Portofolio</p>
-          </Button>
+          </Button> */}
         </div>
       </div>
       <div className="w-full h-[calc(100vh-124px)] bg-pink-400 border-custom rounded-2xl overflow-hidden items-center justify-center hidden md:flex md:col-span-1">
