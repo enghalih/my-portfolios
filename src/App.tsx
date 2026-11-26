@@ -71,7 +71,12 @@ function App() {
   return (
     <div className="min-h-screen p-6 flex flex-col gap-8 overflow-x-clip">
       {/* Screen reader live region for page change announcement */}
-      <div className="sr-only" role="status" aria-live="polite" aria-atomic="true">
+      <div
+        className="sr-only"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      >
         {`Halaman ${pageTitles[activePage]} ditampilkan`}
       </div>
 

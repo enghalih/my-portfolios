@@ -2,16 +2,26 @@ import { buttonVariants } from "@/components/Button";
 import { Globe } from "lucide-react";
 import { Github } from "@/components/Logos";
 import Portfolio1 from "@/assets/portfolio-1.webp";
+import Portfolio2 from "@/assets/portfolio-2.webp";
 
 const projects = [
   {
     id: 1,
     title: "Personal Portfolio Website – Modern Neo-Brutalist Web App",
     description:
-      "Website portofolio pribadi yang dirancang dan dikembangkan dari nol dengan pendekatan desain Neo-brutalist yang bersih, interaktif, dan responsif. Dibangun untuk menampilkan profil profesional, daftar proyek, serta kemudahan akses kontak secara optimal di berbagai ukuran perangkat.",
-    image: Portfolio1, // Ganti dengan path gambar proyekmu
+      "Website portofolio pribadi yang dirancang dan dikembangkan dengan pendekatan desain Neo-brutalist yang bersih, interaktif, dan responsif. Dibangun untuk menampilkan profil profesional, daftar proyek, serta kemudahan akses kontak secara optimal di berbagai ukuran perangkat.",
+    image: Portfolio1,
     liveUrl: "https://enghalih.com",
     githubUrl: "https://github.com/enghalih/my-portfolios",
+  },
+  {
+    id: 2,
+    title: "Arch Studio – Modern Architectural Showcase Platform",
+    description:
+      "Platform pameran karya arsitektur yang dibangun menggunakan Next.js dan Tailwind CSS v4 berdasarkan studi kasus Frontend Mentor. Mengutamakan presisi grid, struktur komponen yang modular, navigasi interaktif, serta pengalaman pengguna yang optimal dari layar mobile hingga desktop.",
+    image: Portfolio2,
+    liveUrl: "https://arch-studio-one-indol.vercel.app/",
+    githubUrl: "https://github.com/enghalih/arch-studio",
   },
 ];
 
